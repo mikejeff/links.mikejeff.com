@@ -1,0 +1,76 @@
+:root {
+  color-scheme: light dark;
+  font-size: 100%;
+
+  --blue-d: oklch(0.7 0.17 264);
+  --blue-l: oklch(0.48 0.31 264);
+  --purple-d: oklch(0.71 0.2 302);
+  --purple-l: oklch(0.49 0.27 302);
+  --red-d: oklch(0.72 0.23 29);
+  --red-l: oklch(0.48 0.22 29);
+
+  --dark-bg: hsl(0deg 0% 5%);
+  --dark-fg: hsl(0deg 0% 100%);
+  --light-bg: hsl(0deg 0% 98%);
+  --light-fg: hsl(0deg 0% 0%);
+}
+
+html {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    segoe ui,
+    helvetica neue,
+    Adwaita Sans,
+    Cantarell,
+    Ubuntu,
+    roboto,
+    noto,
+    helvetica,
+    arial,
+    sans-serif;
+}
+
+a {
+  color: light-dark(var(--blue-l), var(--blue-d));
+}
+
+a:visited {
+  color: light-dark(var(--purple-l), var(--purple-d));
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:active {
+  color: light-dark(var(--red-l), var(--red-d));
+}
+
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+li[data-emoji]::marker {
+  content: attr(data-emoji);
+  font-size: 1.2em;
+}
+
+body {
+  background-color: light-dark(var(--light-bg), var(--dark-bg));
+  color: light-dark(var(--light-fg), var(--dark-fg));
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
