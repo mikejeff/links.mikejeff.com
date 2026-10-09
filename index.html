@@ -1,144 +1,171 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mike Jeffery | Links</title>
+    <meta
+      name="description"
+      content="A collection of links and bookmarks curated by Mike Jeffery."
+    />
+    <link rel="canonical" href="https://links.mikejeff.com/" />
+    <meta property="og:title" content="Mike Jeffery | Links" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://links.mikejeff.com/" />
 
-  <title>Mike Jeffery | Links</title>
-  <meta name="description" content="A collection of links and bookmarks curated by Mike Jeffery." />
-  <link rel="canonical" href="https://links.mikejeff.com/" />
-  <meta property="og:title" content="Mike Jeffery | Links" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://links.mikejeff.com/" />
+    <meta
+      property="og:description"
+      content="A collection of links and bookmarks curated by Mike Jeffery."
+    />
 
-  <meta property="og:description" content="A collection of links and bookmarks curated by Mike Jeffery." />
+    <link rel="me" href="https://mastodon.social/@mikejeff" />
 
-  <link rel="me" href="https://mastodon.social/@mikejeff" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>"
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-size: 100%;
 
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>" />
-  <style>
-    :root {
-      color-scheme: light dark;
-      font-size: 100%;
+        --blue-d: oklch(0.7 0.17 264);
+        --blue-l: oklch(0.48 0.31 264);
+        --purple-d: oklch(0.71 0.2 302);
+        --purple-l: oklch(0.49 0.27 302);
+        --red-d: oklch(0.72 0.23 29);
+        --red-l: oklch(0.48 0.22 29);
 
-      --blue-d: oklch(0.7 0.17 264);
-      --blue-l: oklch(0.48 0.31 264);
-      --purple-d: oklch(0.71 0.2 302);
-      --purple-l: oklch(0.49 0.27 302);
-      --red-d: oklch(0.72 0.23 29);
-      --red-l: oklch(0.48 0.22 29);
+        --dark-bg: hsl(0deg 0% 5%);
+        --dark-fg: hsl(0deg 0% 100%);
+        --light-bg: hsl(0deg 0% 98%);
+        --light-fg: hsl(0deg 0% 0%);
+      }
 
-      --dark-bg: hsl(0deg 0% 5%);
-      --dark-fg: hsl(0deg 0% 100%);
-      --light-bg: hsl(0deg 0% 98%);
-      --light-fg: hsl(0deg 0% 0%);
-    }
+      html {
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          avenir next,
+          avenir,
+          segoe ui,
+          helvetica neue,
+          Adwaita Sans,
+          Cantarell,
+          Ubuntu,
+          roboto,
+          noto,
+          helvetica,
+          arial,
+          sans-serif;
+      }
 
-    html {
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        avenir next,
-        avenir,
-        segoe ui,
-        helvetica neue,
-        Adwaita Sans,
-        Cantarell,
-        Ubuntu,
-        roboto,
-        noto,
-        helvetica,
-        arial,
-        sans-serif;
-    }
+      a {
+        color: light-dark(var(--blue-l), var(--blue-d));
+      }
 
-    a {
-      color: light-dark(var(--blue-l), var(--blue-d));
-    }
+      a:visited {
+        color: light-dark(var(--purple-l), var(--purple-d));
+      }
 
-    a:visited {
-      color: light-dark(var(--purple-l), var(--purple-d));
-    }
+      a:hover {
+        text-decoration-thickness: 2px;
+      }
 
-    a:hover {
-      text-decoration-thickness: 2px;
-    }
+      a:active {
+        color: light-dark(var(--red-l), var(--red-d));
+      }
 
-    a:active {
-      color: light-dark(var(--red-l), var(--red-d));
-    }
+      a:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 2px;
+      }
 
-    a:focus-visible {
-      outline: 2px solid currentColor;
-      outline-offset: 2px;
-    }
+      li[data-emoji]::marker {
+        content: attr(data-emoji);
+        font-size: 1.2em;
+      }
 
-    li[data-emoji]::marker {
-      content: attr(data-emoji);
-      font-size: 1.2em;
-    }
+      body {
+        background-color: light-dark(var(--light-bg), var(--dark-bg));
+        color: light-dark(var(--light-fg), var(--dark-fg));
+        line-height: 1.5;
+      }
 
-    body {
-      background-color: light-dark(var(--light-bg), var(--dark-bg));
-      color: light-dark(var(--light-fg), var(--dark-fg));
-      line-height: 1.5;
-    }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        letter-spacing: 0.5px;
+        line-height: 1.2;
+      }
+    </style>
+  </head>
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      letter-spacing: 0.5px;
-      line-height: 1.2;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>Links</h1>
-    <p>links.mikejeff.com</p>
-  </header>
-  <ul>
-    <li data-emoji="🏠 ">
-      <a href="https://www.mikejeff.com">mikejeff.com</a>
-    </li>
-    <li data-emoji="🦋 ">
-      <a href="https://bsky.app/profile/mikejeff.com">Bluesky</a>
-    </li>
-    <li data-emoji="👾 "><a href="https://github.com/mikejeff">GitHub</a></li>
-    <li data-emoji="𓃰 ">
-      <a href="https://mastodon.social/@mikejeff">Mastodon</a>
-    </li>
-    <li data-emoji="[in] ">
-      <a href="https://www.linkedin.com/in/mikejeffdev/">LinkedIn</a>
-    </li>
-  </ul>
-  <h2>Bookmarks</h2>
-  <h3>2026</h3>
-  <h4>September</h4>
-  <ul>
-    <li>
-      <a href="https://roe.dev/blog/dont-be-nice">Don't be nice</a>
-      <span aria-hidden="true"> · </span>
-      <span>Daniel Roe</span>
-    </li>
-    <li>
-      <a href="https://brennan.day/normalized-fascism-in-open-source-12-million-given-to-dhh/">Normalized Fascism in
-        Open Source: $12 Million Given to DHH</a>
-      <span aria-hidden="true"> · </span>
-      <span>Brennan Kenneth</span>
-    </li>
-    <li>
-      <a href="https://chriscoyier.net/2023/04/07/emoji-lists-the-good-way/">Emoji Lists, The Good Way?</a>
-      <span aria-hidden="true"> · </span>
-      <span>Chris Coyier</span>
-    </li>
-  </ul>
-</body>
-
+  <body>
+    <header>
+      <h1>Links</h1>
+      <p>links.mikejeff.com</p>
+    </header>
+    <ul>
+      <li data-emoji="🏠 ">
+        <a href="https://www.mikejeff.com">mikejeff.com</a>
+      </li>
+      <li data-emoji="🦋 ">
+        <a href="https://bsky.app/profile/mikejeff.com">Bluesky</a>
+      </li>
+      <li data-emoji="👾 "><a href="https://github.com/mikejeff">GitHub</a></li>
+      <li data-emoji="𓃰 ">
+        <a href="https://mastodon.social/@mikejeff">Mastodon</a>
+      </li>
+      <li data-emoji="[in] ">
+        <a href="https://www.linkedin.com/in/mikejeffdev/">LinkedIn</a>
+      </li>
+    </ul>
+    <h2>Bookmarks</h2>
+    <h3>2026</h3>
+    <h4>September</h4>
+    <ul>
+      <li>
+        <a href="https://bell.bz/youll-miss-publishers-when-theyre-gone/"
+          >You’ll miss publishers when they’re gone</a
+        >
+        <span aria-hidden="true"> · </span>
+        <span>Andy Bell</span>
+      </li>
+      <li>
+        <a href="https://roe.dev/blog/dont-be-nice">Don't be nice</a>
+        <span aria-hidden="true"> · </span>
+        <span>Daniel Roe</span>
+      </li>
+      <li>
+        <a
+          href="https://brennan.day/normalized-fascism-in-open-source-12-million-given-to-dhh/"
+          >Normalized Fascism in Open Source: $12 Million Given to DHH</a
+        >
+        <span aria-hidden="true"> · </span>
+        <span>Brennan Kenneth</span>
+      </li>
+      <li>
+        <a href="https://chriscoyier.net/2023/04/07/emoji-lists-the-good-way/"
+          >Emoji Lists, The Good Way?</a
+        >
+        <span aria-hidden="true"> · </span>
+        <span>Chris Coyier</span>
+      </li>
+    </ul>
+    <h4>October</h4>
+    <ul>
+      <li>
+        <a href="https://dbushell.com/2026/10/07/sustainable-web-career/"
+          >A sustainable web career, for when all this blows over</a
+        >
+        <span aria-hidden="true"> · </span>
+        <span>David Bushell</span>
+      </li>
+    </ul>
+  </body>
 </html>
